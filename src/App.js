@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Artie
+          Artiess
         </a>
       </header>
     </div>
