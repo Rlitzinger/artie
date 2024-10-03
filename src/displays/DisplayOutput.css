@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background: repeating-linear-gradient(
+    -45deg, /* Angle of the gradient */
+    #121212, /* Dark grey (almost black) */
+    #121212 100px, /* Start and end point of dark grey */
+    #333 100px, /* Start point of light grey */
+    #333 200px /* End point of light grey */
+  );
+}
+
+
+.output-box {
+  width: 80%; /* Fill 80% of the screen width */
+  height: 80%; /* Fill 80% of the screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark grey background for the text box */
+  color: #eee; /* Light grey text color */
+  font-family: 'Arial', sans-serif; /* Using Arial as a widely available sans-serif font */
+  font-size: calc(10px + 2vmin); /* Scaling font size based on viewport size */
+  overflow-wrap: break-word;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), /* Horizontal offset, Vertical offset, Blur radius, Color */
+              0 20px 60px rgba(0,0,0,0.7); /* Larger shadow for more depth */
+}
+
+
+@media (max-width: 768px) {
+  .output-box {
+    width: 90%; /* Slightly more width on smaller screens */
+    height: 90%; /* Slightly more height on smaller screens */
+    font-size: calc(12px + 2vmin); /* Slightly larger font size on smaller screens */
+  }
+}
